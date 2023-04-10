@@ -1,10 +1,10 @@
 # EddyNet
 
-EddyNet is a deep neural network for pixel-wise classification of oceanic eddies, based on the paper "EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies" by R. Lguensat et al.
+EddyNet is a deep neural network for pixel-wise classification of oceanic eddies, based on the paper "EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies" by R. Lguensat et al. The authors' original TensorFlow implementation is available at [https://github.com/redouanelg/EddyNet](https://github.com/redouanelg/EddyNet).
 
 # Usage
 
-To use EddyNet in your project, simply call `torch.hub.load('edwinytgoh/eddynet', 'eddynet', pretrain=True, num_classes=3)`.
+To use EddyNet in your project, simply call `torch.hub.load("edwinytgoh/eddynet", "eddynet", pretrain=True, num_classes=3)`.
 
 The `pretrain` argument is used to specify whether to load the pre-trained weights (default is `True`). The `num_classes` argument specifies the number of classes to predict (2 for binary classification, 3 for not eddy, cyclonic, or anticyclonic).
 
