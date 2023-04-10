@@ -12,6 +12,8 @@ model_urls = {
 def eddynet(pretrained=False, num_classes=3, num_filters=16, kernel_size=3):
     model = EddyNet(num_classes, num_filters, kernel_size)
     if pretrained:
-        state_dict = torch.hub.load_state_dict_from_url(model_urls["eddynet"])
+        state_dict = torch.hub.load_state_dict_from_url(
+            model_urls["eddynet"], map_location="cpu"
+        )
         model.load_state_dict(state_dict)
     return model
