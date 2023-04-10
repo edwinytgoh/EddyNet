@@ -17,7 +17,7 @@ import torch
 import xarray as xr
 
 # Load EddyNet with pre-trained weights and send to GPU if available
-model = torch.hub.load("edwinytgoh/eddynet", "eddynet", pretrain=True, num_classes=3)
+model = torch.hub.load("edwinytgoh/eddynet", "eddynet", pretrained=True, num_classes=3)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
 
