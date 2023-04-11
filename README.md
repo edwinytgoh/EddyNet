@@ -27,6 +27,7 @@ adt = ds["adt"].values.squeeze()
 
 # Convert ADT array to PyTorch tensor with batch dimension and channel dimension, each of size 1
 adt_tensor = torch.from_numpy(adt).reshape(1, 1, *adt.shape).float().to(device)
+adt_tensor[torch.isnan(adt_tensor)] = 0 # Set nan land masks to 0
 
 # Feed ADT tensor into EddyNet and obtain eddy mask
 logits = model(adt_tensor)
