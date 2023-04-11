@@ -5,7 +5,8 @@ from eddynet import EddyNet
 dependencies = ["torch"]
 
 model_urls = {
-    "eddynet": "https://raw.githubusercontent.com/edwinytgoh/eddynet/master/weights/eddynet_trained_on_aviso_ssh_1998-2018.pt",
+    "eddynet": "https://raw.githubusercontent.com/edwinytgoh/eddynet/master/weights/eddynet_global_aviso_ssh_unfiltered_1998-2018.pt",
+    "eddynet_filtered": "https://raw.githubusercontent.com/edwinytgoh/eddynet/master/weights/eddynet_trained_on_aviso_ssh_1998-2018.pt",
 }
 
 
