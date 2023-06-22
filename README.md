@@ -12,6 +12,9 @@ The `pretrain` argument is used to specify whether to load the pre-trained weigh
 
 Here's an example of how to use EddyNet to generate a segmentation mask for eddies from satellite-derived absolute dynamic topography (ADT) data. An example NetCDF file from the [Copernicus daily sea level product](https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-sea-level-global?tab=overview) is provided in the [data](./data) directory under the name `dt_global_twosat_phy_l4_20220428_vDT2021.nc`.
 
+<!-- Run example.ipynb with colab button -->
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/edwinytgoh/EddyNet/blob/master/example.ipynb)
+
 ```python
 import torch
 import xarray as xr
